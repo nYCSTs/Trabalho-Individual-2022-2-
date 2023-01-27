@@ -1,0 +1,10 @@
+version: '3.9'
+
+services: 
+  db:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=lappis
+      - MONGO_INITDB_ROOT_PASSWORD=lappis
+    ports:
+      - "27017:27017"
