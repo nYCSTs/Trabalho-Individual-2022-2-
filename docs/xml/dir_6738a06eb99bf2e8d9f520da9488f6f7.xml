@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_6738a06eb99bf2e8d9f520da9488f6f7" kind="dir">
+    <compoundname>tests/data_pipeline</compoundname>
+    <innerfile refid="tests_2data__pipeline_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/data_pipeline/"/>
+  </compounddef>
+</doxygen>

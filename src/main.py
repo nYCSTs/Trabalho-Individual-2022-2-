@@ -10,11 +10,7 @@ if __name__ != "__main__":
 
 def get_config():
     """
-    Teste
-
-    @param a: The first number to add.
-    @param b: The second number to add.
-    @return: The sum of the two numbers.
+    Realiza configuração inicial.
     """
 
     initialParser = YAMLParser

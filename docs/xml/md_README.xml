@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Trabalho individual de GCES 2022-2</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Os conhecimentos de Gestão de Configuração de Software são fundamentais no ciclo de vida de um produto de software. As técnicas para a gestão vão desde o controle de versão, automação de build e de configuração de ambiente, testes automatizados, isolamento do ambiente até o deploy do sistema. Todo este ciclo nos dias de hoje são integrados em um pipeline de DevOps com as etapas de Integração Contínua (CI) e Deploy Contínuo (CD) implementadas e automatizada.</para>
+<para>Para exercitar estes conhecimentos, neste trabalho, você deverá aplicar os conceitos estudados ao longo da disciplina no produto de software contido neste repositório.</para>
+<para>O sistema se trata de uma biblioteca python para executar pipelines de dados de forma customizável em bancos de dados.</para>
+<para>Para executar a aplicação em sua máquina, basta seguir o passo-a-passo descritos abaixo.</para>
+<sect1 id="md_README_1autotoc_md1">
+<title>Resumo da aplicação</title>
+<para>A biblioteca desenvolvida auxilia desenvolvedores a explorar os dados com funções essenciais para a identificação de outliers e anomalias e uma interface que auxilia a visualizar as informações de acordo com o arquivo de configuração.</para>
+<para>A biblioteca recebe um arquivo yaml com as configurações de cada etapa do pipeline de dados, e do endereço do banco de dados. Após a execução do banco de dados, o banco de dados de dados é atualizado com os resultados da análise e os resultados podem ser visualizados por meio de dashboards no metabase.</para>
+</sect1>
+<sect1 id="md_README_1autotoc_md2">
+<title>Etapas do Trabalho</title>
+<para>O trabalho deve ser elaborado através de etapas. Cada uma das etapas deve ser realizada em um commit separado com o resultado funcional desta etapa.</para>
+<para>As etapas de 1 a 3 são relacionadas ao isolamento do ambiente utilizando a ferramenta Docker e Docker Compose. Neste sentido o tutorial abaixo cobre os conceitos fundamentais para o uso destas tecnologias.</para>
+<para><ulink url="https://github.com/FGA-GCES/Workshop-Docker-Entrega-01/tree/main/tutorial_docker">Tutorial de Docker</ulink></para>
+<para>As etapas de 4 e 5 são relacionadas à configuração do pipeline de CI e CD.</para>
+<para><ulink url="https://github.com/FGA-GCES/Workshop-CI-Entrega-02/tree/main/gitlab-ci_tutorial">Tutorial CI - Gitlab</ulink></para>
+<sect2 id="md_README_1autotoc_md3">
+<title>Containerização do Banco</title>
+<para>A versão inicial do sistema contém o metabase no backend cujo funcionamento requer uma instalação de um banco de dados Mongo. A primeira etapa do trabalho é de configurar um container somente para o banco de dados com as credenciais especificadas na descrição da aplicação e testar o funcionamento do mesmo.</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md4">
+<title>Containerização da aplicação + metabase</title>
+<para>Nesta etapa, tanto o a aplicação python quanto o metabase/banco deverão estar funcionando em containers individuais.</para>
+<para>Deverá ser utilizado um orquestrador (Docker Compose) para gerenciar comunicação entre os containers além do uso de credenciais, networks, volumes, entre outras configurações necessárias para a correta execução da aplicação.</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md5">
+<title>Gestão de dependencias e pacotes python</title>
+<para>Configurar o gerenciador de dependencias e pacotes python, o poetry, para gerar um pacote pip da solução. Publicar a biblioteca</para>
+<para><ulink url="https://python-poetry.org">https://python-poetry.org</ulink></para>
+</sect2>
+<sect2 id="md_README_1autotoc_md6">
+<title>Documentação automatizada</title>
+<para>Gerar a documentação da biblioteca de forma automatizada utilizando o doxygen para gerar informacoes da biblioteca e o sphinx para criar documentação <ulink url="https://www.sphinx-doc.org">https://www.sphinx-doc.org</ulink></para>
+</sect2>
+<sect2 id="md_README_1autotoc_md7">
+<title>Integração Contínua (CI)</title>
+<para>Para a realização desta etapa, a aplicação já deverá ter seu ambiente completamente containerizado.</para>
+<para>Deverá ser utilizada uma ferramenta de Integração Contínua para garantir o build, os testes e o deploy para o <ulink url="https://pypi.org">https://pypi.org</ulink> .</para>
+<para>Esta etapa do trabalho poderá ser realizada utilizado os ambientes de CI do GitLab-CI ou Github Actions.</para>
+<para>Requisitos da configuração da Integração Contínua (Gitlab ou Github) incluem:</para>
+<para>Build (Poetry) Test - unitários Lint - Documentação (sphinx)</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md8">
+<title>Avaliação</title>
+<para>A avaliação do trabalho será feita à partir da correta implementação de cada etapa. A avaliação será feita de maneira <bold>quantitativa</bold> (se foi realizado a implementação + documentação), e <bold>qualitativa</bold> (como foi implementado, entendimento dos conceitos na prática, complexidade da solução). Para isso, faça os <bold>commits atômicos, bem documentados, completos</bold> a fim de facilitar o entendimento e avaliação do seu trabalho. Lembrando o trabalho é individual.</para>
+<para><bold>Observações</bold>:<orderedlist>
+<listitem><para>A data final de entrega do trabalho é o dia 28/01/2023;</para>
+</listitem><listitem><para>O trabalho deve ser desenvolvido em um <bold>repositório PESSOAL e PRIVADO</bold> que deverá ser tornado público somente após a data de entrega do trabalho (no dia 28/01/2023);</para>
+</listitem><listitem><para>Cada etapa do trabalho deverá ser entregue em commits progressivos (pendendo ser mais de um commit por etapa);</para>
+</listitem><listitem><para>Os <bold>commits devem estar espaçados em dias ao longo do desenvolvimento do trabalho</bold>. Commits feitos todos juntos na data de entrega não serão descontados da nota final.</para>
+</listitem></orderedlist>
+</para>
+<para><table rows="7" cols="2"><row>
+<entry thead="yes"><para>Item   </para>
+</entry><entry thead="yes"><para>Peso    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>1. Containerização do Banco   </para>
+</entry><entry thead="no"><para>1.0    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>2. Containerização da biblioteca + Banco   </para>
+</entry><entry thead="no"><para>1.5    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>3. Publicação da biblioteca   </para>
+</entry><entry thead="no"><para>1.5    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>4. Documentação automatiza   </para>
+</entry><entry thead="no"><para>1.5    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5. Integração Contínua (Build, Test, Lint, documentacao)   </para>
+</entry><entry thead="no"><para>3.0    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>6. Deploy Contínuo   </para>
+</entry><entry thead="no"><para>1.5   </para>
+</entry></row>
+</table>
+</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md9">
+<title>Exemplo de Trabalhos Anteriores</title>
+<para>Alguns trabalhos de trabalhos anteriores:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://github.com/FGA-GCES/Trabalho-Individual-2020-2">2020/2</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/FGA-GCES/Workshop-Docker-Entrega-01">2021/1</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/FGA-GCES/Trabalho-Individual-2021-2">2021/2</ulink></para>
+</listitem></itemizedlist>
+</para>
+<sect3 id="md_README_1autotoc_md10">
+<title>Requisitos de instação</title>
+<para><programlisting><codeline><highlight class="normal">python<sp/>-m<sp/>venv<sp/>env</highlight></codeline>
+<codeline><highlight class="normal">source<sp/>env/bin/activate</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>-r<sp/>requirements.txt</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_README_1autotoc_md11">
+<title>Rodando a aplicação</title>
+<para><programlisting><codeline><highlight class="normal">python<sp/>src/main.py</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_README_1autotoc_md12">
+<title>Testando</title>
+<para><programlisting><codeline><highlight class="normal">pytest<sp/>--cov</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_README_1autotoc_md13">
+<title>Metabase</title>
+<para>O metabase ajuda a visualizar e a modelar o processamento dos dados, a engenharia de features e monitoramento do modelo.</para>
+<para><table rows="5" cols="2"><row>
+<entry thead="yes"><para>Keywords   </para>
+</entry><entry thead="yes"><para>Descrição    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>CSV   </para>
+</entry><entry thead="no"><para>Um arquivo CSV é um arquivo de texto simples que armazena informações de tabelas e planilhas. Os arquivos CSV podem ser facilmente importados e exportados usando programas que armazenam dados em tabelas.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Collection (coleção)   </para>
+</entry><entry thead="no"><para>Uma coleção é um agrupamento de documentos do MongoDB. Os documentos dentro de uma coleção podem ter campos diferentes. Uma coleção é o equivalente a uma tabela em um sistema de banco de dados relacional.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Database   </para>
+</entry><entry thead="no"><para>Um banco de dados armazena uma ou mais coleções de documentos.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Mongo   </para>
+</entry><entry thead="no"><para>É um banco de dados NoSQL desenvolvido pela MongoDB Inc. O banco de dados MongoDB foi criado para armazenar uma grande quantidade de dados e também executar rapidamente.   </para>
+</entry></row>
+</table>
+</para>
+<para><bold>Connect the database to the metabase</bold></para>
+<para><itemizedlist>
+<listitem><para>step 1: Open localhost:3000</para>
+</listitem><listitem><para>step 2: Click Admin setting</para>
+</listitem><listitem><para>step 3: Click Database</para>
+</listitem><listitem><para>step 4: Adicione os dados de autenticação de banco de dados</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Exemplo da conexão mongo metabase</bold> <table rows="5" cols="2"><row>
+<entry thead="yes"><para>metabase   </para>
+</entry><entry thead="yes"><para>credential    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>host   </para>
+</entry><entry thead="no"><para>mongo    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>dabase_name   </para>
+</entry><entry thead="no"><para>use the name you define in make migrate    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>user   </para>
+</entry><entry thead="no"><para>lappis    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>password   </para>
+</entry><entry thead="no"><para>lappis   </para>
+</entry></row>
+</table>
+</para>
+</sect3>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

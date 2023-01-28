@@ -1,0 +1,76 @@
+\hypertarget{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding}{}\doxysection{data\+\_\+pipeline.\+feature\+\_\+engineering.\+word\+\_\+embedding.\+Word\+Embedding Class Reference}
+\label{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding}\index{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a10817fded0539110daef964d8bf1bd8a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, lang, dimensions)
+\item 
+def \mbox{\hyperlink{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_abf75033d7367dcc2ce77151091b48342}{get\+\_\+embedding}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a9f80ebd1ebd4388302cd3e19e56916ed}{bpl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a10817fded0539110daef964d8bf1bd8a}\label{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a10817fded0539110daef964d8bf1bd8a}} 
+\index{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def data\+\_\+pipeline.\+feature\+\_\+engineering.\+word\+\_\+embedding.\+Word\+Embedding.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lang,  }\item[{}]{dimensions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize a word embedding object using the BytePairLanguage model.
+
+Parameters
+----------
+lang: str
+    The language to use for the word embedding (default is "es")
+dimensions: str
+    The number of dimensions for the word embedding vectors (default is 25)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_abf75033d7367dcc2ce77151091b48342}\label{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_abf75033d7367dcc2ce77151091b48342}} 
+\index{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}!get\_embedding@{get\_embedding}}
+\index{get\_embedding@{get\_embedding}!data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}}
+\doxysubsubsection{\texorpdfstring{get\_embedding()}{get\_embedding()}}
+{\footnotesize\ttfamily def data\+\_\+pipeline.\+feature\+\_\+engineering.\+word\+\_\+embedding.\+Word\+Embedding.\+get\+\_\+embedding (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the word embedding vector for a given text.
+
+Parameters
+----------
+text: str
+    The string to be processed
+
+Returns
+----------
+arr[float]
+    A word embedding vector for the given text
+
+Examples
+--------
+>>> get_embedding("This is a text", "es", 25)
+[ 0.06799883  0.17547965  0.47599664  0.16108984 -0.1360625  -0.10632467
+-0.10654568 -0.09805    -0.33004168 -0.33528003 -0.23304085  0.36661038
+-0.5797167   0.53252834  0.30276018 -0.01584417  0.85087484  0.14121284
+0.74862367 -0.33011952  0.015432    0.02694534  0.10118082 -0.34017918
+-0.14560167]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a9f80ebd1ebd4388302cd3e19e56916ed}\label{classdata__pipeline_1_1feature__engineering_1_1word__embedding_1_1WordEmbedding_a9f80ebd1ebd4388302cd3e19e56916ed}} 
+\index{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}!bpl@{bpl}}
+\index{bpl@{bpl}!data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding@{data\_pipeline.feature\_engineering.word\_embedding.WordEmbedding}}
+\doxysubsubsection{\texorpdfstring{bpl}{bpl}}
+{\footnotesize\ttfamily data\+\_\+pipeline.\+feature\+\_\+engineering.\+word\+\_\+embedding.\+Word\+Embedding.\+bpl}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+\_\+pipeline/feature\+\_\+engineering/\mbox{\hyperlink{word__embedding_8py}{word\+\_\+embedding.\+py}}\end{DoxyCompactItemize}

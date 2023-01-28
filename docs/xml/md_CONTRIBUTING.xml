@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="md_CONTRIBUTING" kind="page">
+    <compoundname>md_CONTRIBUTING</compoundname>
+    <title>Contributing guide</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md_CONTRIBUTING_1autotoc_md15">
+<title>How to contribute?</title>
+<para>Contributing to the project is very easy and every little bit counts! Just follow the following steps:</para>
+<para>To contribute to this project, follow the next steps:</para>
+<para><itemizedlist>
+<listitem><para><emphasis>Fork</emphasis> (just to external contributors)</para>
+</listitem><listitem><para>Create <ulink url="CONTRIBUTING.md#issues"><emphasis>issues</emphasis></ulink></para>
+</listitem><listitem><para>Create <ulink url="CONTRIBUTING.md#branches-policy"><emphasis>branchs</emphasis></ulink></para>
+</listitem><listitem><para>Follow the commit policy <ulink url="CONTRIBUTING.md#commit-policy"><emphasis>commits</emphasis></ulink></para>
+</listitem><listitem><para>Submit <ulink url="CONTRIBUTING.md#merges-and-pull-requests-policy"><emphasis>Pull Request</emphasis></ulink></para>
+</listitem></itemizedlist>
+</para>
+<sect2 id="md_CONTRIBUTING_1autotoc_md16">
+<title>Commit Policy</title>
+<para>The <emphasis>issues</emphasis> need title, description, at least one asigned, <emphasis>labels</emphasis>, <emphasis>milestoner</emphasis> (the <emphasis>sprint</emphasis> to conclude)</para>
+<para>The Labels used in the project are described in the topic <ulink url="https://github.com/PDA-FGA/Playground/labels">Labels</ulink>.</para>
+<para>To create a issue follow task template or user history template</para>
+</sect2>
+<sect2 id="md_CONTRIBUTING_1autotoc_md17">
+<title>Branches Policy</title>
+<sect3 id="md_CONTRIBUTING_1autotoc_md18">
+<title>&lt;em&gt;main&lt;/em&gt;</title>
+<para>The <emphasis>main</emphasis> is the production branch, where the stable version of the project will be. It will be closed for commits and for pushes. See the merge policy in the topic <ulink url="CONTRIBUTING.md#merges-to-main">Merges para <emphasis>master</emphasis></ulink>.</para>
+</sect3>
+<sect3 id="md_CONTRIBUTING_1autotoc_md19">
+<title>Branch Names</title>
+<para>The development branches will be created from the <emphasis>main</emphasis> branch with the default naming <computeroutput>x/issue_name</computeroutput>, where <computeroutput>x</computeroutput> represents the issue tracking code.</para>
+</sect3>
+</sect2>
+<sect2 id="md_CONTRIBUTING_1autotoc_md20">
+<title>Commits Policy</title>
+<para>All commits must be mention the issue, for that, just add <computeroutput>#&lt;issue_number&gt;</computeroutput>.</para>
+<para><programlisting><codeline><highlight class="normal">#21<sp/>Adding<sp/>contributing<sp/>guide</highlight></codeline>
+</programlisting></para>
+<para><bold>By default, the <computeroutput>#</computeroutput> character defines a comment line in the commit message file. To resolve this issue, use the command:</bold> <programlisting><codeline><highlight class="normal">git<sp/>config<sp/>--local<sp/>core.commentChar<sp/>&apos;!&apos;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md_CONTRIBUTING_1autotoc_md21">
+<title>Merges and Pull Requests Policy</title>
+<sect3 id="md_CONTRIBUTING_1autotoc_md22">
+<title>Pull Requests</title>
+<para>Pull requests must be made to the <emphasis>main</emphasis> branch following the rules and steps in the topic <ulink url="CONTRIBUTING.md#merges-to-main"><emphasis>Merges to main</emphasis></ulink>. In the pull request content there should be a clear description of what was done.</para>
+<para>Follow template Pull Request.</para>
+</sect3>
+<sect3 id="md_CONTRIBUTING_1autotoc_md23">
+<title>Tag&apos;s</title>
+</sect3>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="CONTRIBUTING.md"/>
+  </compounddef>
+</doxygen>

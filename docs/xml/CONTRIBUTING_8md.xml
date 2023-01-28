@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="CONTRIBUTING_8md" kind="file" language="Markdown">
+    <compoundname>CONTRIBUTING.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Contributing<sp/>guide<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>contribute?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Contributing<sp/>to<sp/>the<sp/>project<sp/>is<sp/>very<sp/>easy<sp/>and<sp/>every<sp/>little<sp/>bit<sp/>counts!<sp/>Just<sp/>follow<sp/>the<sp/>following<sp/>steps:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>contribute<sp/>to<sp/>this<sp/>project,<sp/>follow<sp/>the<sp/>next<sp/>steps:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>*Fork*<sp/>(just<sp/>to<sp/>external<sp/>contributors)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Create<sp/>[*issues*](CONTRIBUTING.md#issues)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Create<sp/>[*branchs*](CONTRIBUTING.md#branches-policy)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Follow<sp/>the<sp/>commit<sp/>policy<sp/>[*commits*](CONTRIBUTING.md#commit-policy)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Submit<sp/>[*Pull<sp/>Request*](CONTRIBUTING.md#merges-and-pull-requests-policy)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Commit<sp/>Policy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>*issues*<sp/>need<sp/>title,<sp/>description,<sp/>at<sp/>least<sp/>one<sp/>asigned,<sp/>*labels*,<sp/>*milestoner*<sp/>(the<sp/>*sprint*<sp/>to<sp/>conclude)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Labels<sp/>used<sp/>in<sp/>the<sp/>project<sp/>are<sp/>described<sp/>in<sp/>the<sp/>topic<sp/>[Labels](https://github.com/PDA-FGA/Playground/labels).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>create<sp/>a<sp/>issue<sp/>follow<sp/>[task<sp/>template](/.github/ISSUE_TEMPLATE/task.md)<sp/>or<sp/>[user<sp/>history<sp/>template](/.github/ISSUE_TEMPLATE/user-story.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Branches<sp/>Policy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>*main*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>*main*<sp/>is<sp/>the<sp/>production<sp/>branch,<sp/>where<sp/>the<sp/>stable<sp/>version<sp/>of<sp/>the<sp/>project<sp/>will<sp/>be.<sp/>It<sp/>will<sp/>be<sp/>closed<sp/>for<sp/>commits<sp/>and<sp/>for<sp/>pushes.</highlight></codeline>
+<codeline><highlight class="normal">See<sp/>the<sp/>merge<sp/>policy<sp/>in<sp/>the<sp/>topic<sp/>[Merges<sp/>para<sp/>*master*](CONTRIBUTING.md#merges-to-main).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Branch<sp/>Names<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>development<sp/>branches<sp/>will<sp/>be<sp/>created<sp/>from<sp/>the<sp/>*main*<sp/>branch<sp/>with<sp/>the<sp/>default<sp/>naming<sp/>`x/issue_name`,<sp/>where<sp/>`x`<sp/>represents<sp/>the<sp/>issue<sp/>tracking<sp/>code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Commits<sp/>Policy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>commits<sp/>must<sp/>be<sp/>mention<sp/>the<sp/>issue,<sp/>for<sp/>that,<sp/>just<sp/>add<sp/>`#&lt;issue_number&gt;`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/>#21<sp/>Adding<sp/>contributing<sp/>guide</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**By<sp/>default,<sp/>the<sp/>`#`<sp/>character<sp/>defines<sp/>a<sp/>comment<sp/>line<sp/>in<sp/>the<sp/>commit<sp/>message<sp/>file.<sp/>To<sp/>resolve<sp/>this<sp/>issue,<sp/>use<sp/>the<sp/>command:**</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>--local<sp/>core.commentChar<sp/>&apos;!&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Merges<sp/>and<sp/>Pull<sp/>Requests<sp/>Policy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Pull<sp/>Requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pull<sp/>requests<sp/>must<sp/>be<sp/>made<sp/>to<sp/>the<sp/>*main*<sp/>branch<sp/>following<sp/>the<sp/>rules<sp/>and<sp/>steps<sp/>in<sp/>the<sp/>topic<sp/>[*Merges<sp/>to<sp/>main*](CONTRIBUTING.md#merges-to-main).<sp/>In<sp/>the<sp/>pull<sp/>request<sp/>content<sp/>there<sp/>should<sp/>be<sp/>a<sp/>clear<sp/>description<sp/>of<sp/>what<sp/>was<sp/>done.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Follow<sp/>[template<sp/>Pull<sp/>Request](/.github/pull_request_template.md).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Tag&apos;s</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>Explicar<sp/>tag&apos;s<sp/>--&gt;</highlight></codeline>
+    </programlisting>
+    <location file="CONTRIBUTING.md"/>
+  </compounddef>
+</doxygen>

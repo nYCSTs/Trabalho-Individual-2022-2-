@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Trabalho<sp/>individual<sp/>de<sp/>GCES<sp/>2022-2</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Os<sp/>conhecimentos<sp/>de<sp/>Gestão<sp/>de<sp/>Configuração<sp/>de<sp/>Software<sp/>são<sp/>fundamentais<sp/>no<sp/>ciclo<sp/>de<sp/>vida<sp/>de<sp/>um<sp/>produto<sp/>de<sp/>software.<sp/>As<sp/>técnicas<sp/>para<sp/>a<sp/>gestão<sp/>vão<sp/>desde<sp/>o<sp/>controle<sp/>de<sp/>versão,<sp/>automação<sp/>de<sp/>build<sp/>e<sp/>de<sp/>configuração<sp/>de<sp/>ambiente,<sp/>testes<sp/>automatizados,<sp/>isolamento<sp/>do<sp/>ambiente<sp/>até<sp/>o<sp/>deploy<sp/>do<sp/>sistema.<sp/>Todo<sp/>este<sp/>ciclo<sp/>nos<sp/>dias<sp/>de<sp/>hoje<sp/>são<sp/>integrados<sp/>em<sp/>um<sp/>pipeline<sp/>de<sp/>DevOps<sp/>com<sp/>as<sp/>etapas<sp/>de<sp/>Integração<sp/>Contínua<sp/>(CI)<sp/>e<sp/>Deploy<sp/>Contínuo<sp/>(CD)<sp/>implementadas<sp/>e<sp/>automatizada.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>exercitar<sp/>estes<sp/>conhecimentos,<sp/>neste<sp/>trabalho,<sp/>você<sp/>deverá<sp/>aplicar<sp/>os<sp/>conceitos<sp/>estudados<sp/>ao<sp/>longo<sp/>da<sp/>disciplina<sp/>no<sp/>produto<sp/>de<sp/>software<sp/>contido<sp/>neste<sp/>repositório.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>sistema<sp/>se<sp/>trata<sp/>de<sp/>uma<sp/>biblioteca<sp/>python<sp/>para<sp/>executar<sp/>pipelines<sp/>de<sp/>dados<sp/>de<sp/>forma<sp/>customizável<sp/>em<sp/>bancos<sp/>de<sp/>dados.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>executar<sp/>a<sp/>aplicação<sp/>em<sp/>sua<sp/>máquina,<sp/>basta<sp/>seguir<sp/>o<sp/>passo-a-passo<sp/>descritos<sp/>abaixo.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Resumo<sp/>da<sp/>aplicação<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>A<sp/>biblioteca<sp/>desenvolvida<sp/>auxilia<sp/>desenvolvedores<sp/>a<sp/>explorar<sp/>os<sp/>dados<sp/>com<sp/>funções<sp/>essenciais<sp/>para<sp/>a<sp/>identificação<sp/>de<sp/>outliers<sp/>e<sp/>anomalias<sp/>e<sp/>uma<sp/>interface<sp/>que<sp/>auxilia<sp/>a<sp/>visualizar<sp/>as<sp/>informações<sp/>de<sp/>acordo<sp/>com<sp/>o<sp/>arquivo<sp/>de<sp/>configuração.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>A<sp/>biblioteca<sp/>recebe<sp/>um<sp/>arquivo<sp/>yaml<sp/>com<sp/>as<sp/>configurações<sp/>de<sp/>cada<sp/>etapa<sp/>do<sp/>pipeline<sp/>de<sp/>dados,<sp/>e<sp/>do<sp/>endereço<sp/>do<sp/>banco<sp/>de<sp/>dados.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Após<sp/>a<sp/>execução<sp/>do<sp/>banco<sp/>de<sp/>dados,<sp/>o<sp/>banco<sp/>de<sp/>dados<sp/>de<sp/>dados<sp/>é<sp/>atualizado<sp/>com<sp/>os<sp/>resultados<sp/>da<sp/>análise<sp/>e<sp/>os<sp/>resultados<sp/>podem<sp/>ser<sp/>visualizados<sp/>por<sp/>meio<sp/>de<sp/>dashboards<sp/>no<sp/>metabase.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>#<sp/>Etapas<sp/>do<sp/>Trabalho</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>O<sp/>trabalho<sp/>deve<sp/>ser<sp/>elaborado<sp/>através<sp/>de<sp/>etapas.<sp/>Cada<sp/>uma<sp/>das<sp/>etapas<sp/>deve<sp/>ser<sp/>realizada<sp/>em<sp/>um<sp/>commit<sp/>separado<sp/>com<sp/>o<sp/>resultado<sp/>funcional<sp/>desta<sp/>etapa.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>etapas<sp/>de<sp/>1<sp/>a<sp/>3<sp/>são<sp/>relacionadas<sp/>ao<sp/>isolamento<sp/>do<sp/>ambiente<sp/>utilizando<sp/>a<sp/>ferramenta<sp/>Docker<sp/>e<sp/>Docker<sp/>Compose.<sp/>Neste<sp/>sentido<sp/>o<sp/>tutorial<sp/>abaixo<sp/>cobre<sp/>os<sp/>conceitos<sp/>fundamentais<sp/>para<sp/>o<sp/>uso<sp/>destas<sp/>tecnologias.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Tutorial<sp/>de<sp/>Docker](https://github.com/FGA-GCES/Workshop-Docker-Entrega-01/tree/main/tutorial_docker)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>etapas<sp/>de<sp/>4<sp/>e<sp/>5<sp/>são<sp/>relacionadas<sp/>à<sp/>configuração<sp/>do<sp/>pipeline<sp/>de<sp/>CI<sp/>e<sp/>CD.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Tutorial<sp/>CI<sp/>-<sp/>Gitlab](https://github.com/FGA-GCES/Workshop-CI-Entrega-02/tree/main/gitlab-ci_tutorial)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Containerização<sp/>do<sp/>Banco</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>versão<sp/>inicial<sp/>do<sp/>sistema<sp/>contém<sp/>o<sp/>metabase<sp/>no<sp/>backend<sp/>cujo<sp/>funcionamento<sp/>requer<sp/>uma<sp/>instalação<sp/>de<sp/>um<sp/>banco<sp/>de<sp/>dados<sp/>Mongo.<sp/>A<sp/>primeira<sp/>etapa<sp/>do<sp/>trabalho<sp/>é<sp/>de<sp/>configurar<sp/>um<sp/>container<sp/>somente<sp/>para<sp/>o<sp/>banco<sp/>de<sp/>dados<sp/>com<sp/>as<sp/>credenciais<sp/>especificadas<sp/>na<sp/>descrição<sp/>da<sp/>aplicação<sp/>e<sp/>testar<sp/>o<sp/>funcionamento<sp/>do<sp/>mesmo.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Containerização<sp/>da<sp/>aplicação<sp/>+<sp/>metabase</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Nesta<sp/>etapa,<sp/>tanto<sp/>o<sp/>a<sp/>aplicação<sp/>python<sp/>quanto<sp/>o<sp/>metabase/banco<sp/>deverão<sp/>estar<sp/>funcionando<sp/>em<sp/>containers<sp/>individuais.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Deverá<sp/>ser<sp/>utilizado<sp/>um<sp/>orquestrador<sp/>(Docker<sp/>Compose)<sp/>para<sp/>gerenciar<sp/>comunicação<sp/>entre<sp/>os<sp/>containers<sp/>além<sp/>do<sp/>uso<sp/>de<sp/>credenciais,<sp/>networks,<sp/>volumes,<sp/>entre<sp/>outras<sp/>configurações<sp/>necessárias<sp/>para<sp/>a<sp/>correta<sp/>execução<sp/>da<sp/>aplicação.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Gestão<sp/>de<sp/>dependencias<sp/>e<sp/>pacotes<sp/>python</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configurar<sp/>o<sp/>gerenciador<sp/>de<sp/>dependencias<sp/>e<sp/>pacotes<sp/>python,<sp/>o<sp/>poetry,<sp/>para<sp/>gerar<sp/>um<sp/>pacote<sp/>pip<sp/>da<sp/>solução.<sp/>Publicar<sp/>a<sp/>biblioteca</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">https://python-poetry.org</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentação<sp/>automatizada</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Gerar<sp/>a<sp/>documentação<sp/>da<sp/>biblioteca<sp/>de<sp/>forma<sp/>automatizada<sp/>utilizando<sp/>o<sp/>doxygen<sp/>para<sp/>gerar<sp/>informacoes<sp/>da<sp/>biblioteca<sp/>e<sp/>o<sp/>sphinx<sp/>para<sp/>criar<sp/>documentação<sp/>https://www.sphinx-doc.org</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/><sp/>Integração<sp/>Contínua<sp/>(CI)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>a<sp/>realização<sp/>desta<sp/>etapa,<sp/>a<sp/>aplicação<sp/>já<sp/>deverá<sp/>ter<sp/>seu<sp/>ambiente<sp/>completamente<sp/>containerizado.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Deverá<sp/>ser<sp/>utilizada<sp/>uma<sp/>ferramenta<sp/>de<sp/>Integração<sp/>Contínua<sp/>para<sp/>garantir<sp/>o<sp/>build,<sp/>os<sp/>testes<sp/>e<sp/>o<sp/>deploy<sp/>para<sp/>o<sp/>https://pypi.org<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Esta<sp/>etapa<sp/>do<sp/>trabalho<sp/>poderá<sp/>ser<sp/>realizada<sp/>utilizado<sp/>os<sp/>ambientes<sp/>de<sp/>CI<sp/>do<sp/>GitLab-CI<sp/>ou<sp/>Github<sp/>Actions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Requisitos<sp/>da<sp/>configuração<sp/>da<sp/>Integração<sp/>Contínua<sp/>(Gitlab<sp/>ou<sp/>Github)<sp/>incluem:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Build<sp/>(Poetry)</highlight></codeline>
+<codeline><highlight class="normal">Test<sp/>-<sp/>unitários</highlight></codeline>
+<codeline><highlight class="normal">Lint<sp/>-<sp/></highlight></codeline>
+<codeline><highlight class="normal">Documentação<sp/>(sphinx)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Avaliação</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>avaliação<sp/>do<sp/>trabalho<sp/>será<sp/>feita<sp/>à<sp/>partir<sp/>da<sp/>correta<sp/>implementação<sp/>de<sp/>cada<sp/>etapa.<sp/>A<sp/>avaliação<sp/>será<sp/>feita<sp/>de<sp/>maneira<sp/>**quantitativa**<sp/>(se<sp/>foi<sp/>realizado<sp/>a<sp/>implementação<sp/>+<sp/>documentação),<sp/>e<sp/>**qualitativa**<sp/>(como<sp/>foi<sp/>implementado,<sp/>entendimento<sp/>dos<sp/>conceitos<sp/>na<sp/>prática,<sp/>complexidade<sp/>da<sp/>solução).<sp/>Para<sp/>isso,<sp/>faça<sp/>os<sp/>**commits<sp/>atômicos,<sp/>bem<sp/>documentados,<sp/>completos**<sp/>a<sp/>fim<sp/>de<sp/>facilitar<sp/>o<sp/>entendimento<sp/>e<sp/>avaliação<sp/>do<sp/>seu<sp/>trabalho.<sp/>Lembrando<sp/>o<sp/>trabalho<sp/>é<sp/>individual.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Observações**:<sp/></highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>A<sp/>data<sp/>final<sp/>de<sp/>entrega<sp/>do<sp/>trabalho<sp/>é<sp/>o<sp/>dia<sp/>28/01/2023;</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>O<sp/>trabalho<sp/>deve<sp/>ser<sp/>desenvolvido<sp/>em<sp/>um<sp/>**repositório<sp/>PESSOAL<sp/>e<sp/>PRIVADO**<sp/>que<sp/>deverá<sp/>ser<sp/>tornado<sp/>público<sp/>somente<sp/>após<sp/>a<sp/>data<sp/>de<sp/>entrega<sp/>do<sp/>trabalho<sp/>(no<sp/>dia<sp/>28/01/2023);</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Cada<sp/>etapa<sp/>do<sp/>trabalho<sp/>deverá<sp/>ser<sp/>entregue<sp/>em<sp/>commits<sp/>progressivos<sp/>(pendendo<sp/>ser<sp/>mais<sp/>de<sp/>um<sp/>commit<sp/>por<sp/>etapa);</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Os<sp/>**commits<sp/>devem<sp/>estar<sp/>espaçados<sp/>em<sp/>dias<sp/>ao<sp/>longo<sp/>do<sp/>desenvolvimento<sp/>do<sp/>trabalho**.<sp/>Commits<sp/>feitos<sp/>todos<sp/>juntos<sp/>na<sp/>data<sp/>de<sp/>entrega<sp/>não<sp/>serão<sp/>descontados<sp/>da<sp/>nota<sp/>final.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Item<sp/>|<sp/>Peso<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>1.<sp/>Containerização<sp/>do<sp/>Banco<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>1.0<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.<sp/>Containerização<sp/>da<sp/>biblioteca<sp/>+<sp/>Banco<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>1.5<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>3.<sp/>Publicação<sp/>da<sp/>biblioteca<sp/><sp/>|<sp/>1.5<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>4.<sp/>Documentação<sp/>automatiza<sp/>|<sp/>1.5<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.<sp/>Integração<sp/>Contínua<sp/>(Build,<sp/>Test,<sp/>Lint,<sp/>documentacao)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>3.0<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>6.<sp/>Deploy<sp/>Contínuo<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>1.5<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/><sp/>Exemplo<sp/>de<sp/>Trabalhos<sp/>Anteriores</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Alguns<sp/>trabalhos<sp/>de<sp/>trabalhos<sp/>anteriores:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[2020/2](https://github.com/FGA-GCES/Trabalho-Individual-2020-2)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[2021/1](https://github.com/FGA-GCES/Workshop-Docker-Entrega-01)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[2021/2](https://github.com/FGA-GCES/Trabalho-Individual-2021-2)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Requisitos<sp/>de<sp/>instação</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>-m<sp/>venv<sp/>env</highlight></codeline>
+<codeline><highlight class="normal">source<sp/>env/bin/activate</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>-r<sp/>requirements.txt</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Rodando<sp/>a<sp/>aplicação</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>src/main.py</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Testando</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>--cov</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Metabase</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>metabase<sp/>ajuda<sp/>a<sp/>visualizar<sp/>e<sp/>a<sp/>modelar<sp/>o<sp/>processamento<sp/>dos<sp/>dados,<sp/>a<sp/>engenharia<sp/>de<sp/>features<sp/>e<sp/>monitoramento<sp/>do<sp/>modelo.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Keywords<sp/><sp/>|<sp/>Descrição<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-----------|-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/>CSV<sp/><sp/><sp/><sp/><sp/>|<sp/>Um<sp/>arquivo<sp/>CSV<sp/>é<sp/>um<sp/>arquivo<sp/>de<sp/>texto<sp/>simples<sp/>que<sp/>armazena<sp/>informações<sp/>de<sp/>tabelas<sp/>e<sp/>planilhas.<sp/>Os<sp/>arquivos<sp/>CSV<sp/>podem<sp/>ser<sp/>facilmente<sp/>importados<sp/>e<sp/>exportados<sp/>usando<sp/>programas<sp/>que<sp/>armazenam<sp/>dados<sp/>em<sp/>tabelas.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Collection<sp/>(coleção)|<sp/>Uma<sp/>coleção<sp/>é<sp/>um<sp/>agrupamento<sp/>de<sp/>documentos<sp/>do<sp/>MongoDB.<sp/>Os<sp/>documentos<sp/>dentro<sp/>de<sp/>uma<sp/>coleção<sp/>podem<sp/>ter<sp/>campos<sp/>diferentes.<sp/>Uma<sp/>coleção<sp/>é<sp/>o<sp/>equivalente<sp/>a<sp/>uma<sp/>tabela<sp/>em<sp/>um<sp/>sistema<sp/>de<sp/>banco<sp/>de<sp/>dados<sp/>relacional.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>Database<sp/>|<sp/>Um<sp/>banco<sp/>de<sp/>dados<sp/>armazena<sp/>uma<sp/>ou<sp/>mais<sp/>coleções<sp/>de<sp/>documentos.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Mongo|<sp/>É<sp/>um<sp/>banco<sp/>de<sp/>dados<sp/>NoSQL<sp/>desenvolvido<sp/>pela<sp/>MongoDB<sp/>Inc.<sp/>O<sp/>banco<sp/>de<sp/>dados<sp/>MongoDB<sp/>foi<sp/>criado<sp/>para<sp/>armazenar<sp/>uma<sp/>grande<sp/>quantidade<sp/>de<sp/>dados<sp/>e<sp/>também<sp/>executar<sp/>rapidamente.|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Connect<sp/>the<sp/>database<sp/>to<sp/>the<sp/>metabase**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>step<sp/>1:<sp/>Open<sp/>localhost:3000</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>step<sp/>2:<sp/>Click<sp/>Admin<sp/>setting</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>step<sp/>3:<sp/>Click<sp/>Database</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>step<sp/>4:<sp/>Adicione<sp/>os<sp/>dados<sp/>de<sp/>autenticação<sp/>de<sp/><sp/>banco<sp/>de<sp/>dados<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Exemplo<sp/>da<sp/>conexão<sp/>mongo<sp/><sp/>metabase**</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>metabase<sp/><sp/>|<sp/>credential<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|------------|-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/>host<sp/><sp/><sp/><sp/>|<sp/><sp/>mongo<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|dabase_name<sp/>|<sp/>use<sp/>the<sp/>name<sp/>you<sp/>define<sp/>in<sp/>make<sp/>migrate|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/>user<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>lappis<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>password<sp/><sp/>|<sp/><sp/><sp/>lappis<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>
