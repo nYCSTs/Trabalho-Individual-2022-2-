@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3'
 
 services: 
   db:
@@ -8,3 +8,41 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=lappis
     ports:
       - "27017:27017"
+
+  postgres:
+    image: postgres
+    environment: 
+      - POSTGRES_PASSWORD=lappis
+      - POSTGRES_USER=lappis
+      - METABASE_PASSWORD=lappis
+    ports:
+      - "5432:5432"
+    depends_on:
+      - db
+    volumes:
+      - metabase-data:/var/lib/postgresql/data
+    
+  metabase:
+    image: metabase/metabase
+    environment:
+      - MB_DB_TYPE=postgres
+      - MB_DB_DBNAME=lappis
+      - MB_DB_PORT=5432
+      - MB_DB_USER=lappis
+      - MB_DB_PASS=lappis
+      - MB_DB_HOST=postgres
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pynalytics
+    volumes:
+      - ./pynalytics:/app/
+      
+volumes:
+  metabase-data:
