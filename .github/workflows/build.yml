@@ -1,4 +1,4 @@
-name: Build using Poetry
+name: Build and Deploy using Poetry
 
 on: [push]
 
@@ -32,3 +32,31 @@ jobs:
 
     - name: Build package
       run: poetry build
+      env:
+        PYPI_PACKAGE: ${{ env.GITHUB_WORKSPACE }}/dist/*
+        
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install pipx
+      run: |
+        python -m pip install pipx
+        
+    - name: Install poetry
+      run: |
+        pipx install poetry==1.2.0
+
+    - name: Publish to PyPI
+      run: |
+        poetry config pypi-token.pypi ${{ vars.PYPI_API_KEY }}
+        poetry publish $PYPI_PACKAGE
