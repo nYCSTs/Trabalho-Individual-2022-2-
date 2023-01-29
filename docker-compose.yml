@@ -35,14 +35,6 @@ services:
       - "3000:3000"
     depends_on:
       - postgres
-
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: pynalytics
-    volumes:
-      - ./pynalytics:/app/
       
 volumes:
   metabase-data:
