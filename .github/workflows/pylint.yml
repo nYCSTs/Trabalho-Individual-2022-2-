@@ -1,9 +1,9 @@
-name: Pylint
+name: Continuous Integration (CI)
 
 on: [push]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
