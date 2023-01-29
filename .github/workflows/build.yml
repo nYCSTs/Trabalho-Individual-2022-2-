@@ -1,20 +1,23 @@
 name: Continuous Integration (CI)
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PYTHON_VERSION: 3.9
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.9"]
     steps:
     - uses: actions/checkout@v3
     
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
       uses: actions/setup-python@v3
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ env.PYTHON_VERSION }}
         
     - name: Install pipx
       run: |
@@ -38,3 +41,30 @@ jobs:
       with:
         name: dist
         path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install poetry
+      run: |
+        pipx install poetry==1.2.0
+
+    - name: Publish to PyPi 
+      run: |
+        poetry config pypi-token.pypi ${{ secrets.PYPI_API_KEY }} 
+        poetry publish
