@@ -38,6 +38,8 @@ jobs:
       with:
         name: dist
         path: dist
+      env:
+        PYPI_PACKAGE: ${{ env.GITHUB_WORKSPACE }}/dist/*
         
   deploy:
     needs: build
@@ -67,5 +69,5 @@ jobs:
 
     - name: Publish to PyPI
       run: |
-        poetry config pypi-token.pypi ${{ vars.PYPI_API_KEY }}
+        poetry config pypi-token.pypi ${{ secrets.PYPI_API_KEY }}
         poetry publish
