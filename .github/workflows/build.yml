@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  api_key: ${{ vars.ENV_CONTEXT_VAR }}
+  api_key: ${{ vars.PYPI_API_KEY }}
 
 jobs:
   build:
