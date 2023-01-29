@@ -32,8 +32,12 @@ jobs:
 
     - name: Build package
       run: poetry build
-      env:
-        PYPI_PACKAGE: ${{ env.GITHUB_WORKSPACE }}/dist/*
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist
         
   deploy:
     needs: build
@@ -56,7 +60,12 @@ jobs:
       run: |
         pipx install poetry==1.2.0
 
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+
     - name: Publish to PyPI
       run: |
         poetry config pypi-token.pypi ${{ vars.PYPI_API_KEY }}
-        poetry publish $PYPI_PACKAGE
+        poetry publish
