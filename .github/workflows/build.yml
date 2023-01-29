@@ -36,8 +36,7 @@ jobs:
     - name: Build package
       run: poetry build
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@master
       with:
         name: dist
         path: dist
@@ -50,15 +49,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Download artifact
-      uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@master
       with:
         name: dist
+        path: dist
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: LS test
+      run: |
+        ls
         
     - name: Install poetry
       run: |
